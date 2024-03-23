@@ -103,7 +103,7 @@ Skip the accouting folder for now.
 <br />
 </p>
 <br />
-<img src="https://imgur.com/uGmwBKR" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/uGmwBKR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 6a. Try to access the folders you made, which can you access and which folders can you create stuff in?
 The no access shouldn't be able to be opened and read you can read but not edit and read/write you could do both.
 </p>
@@ -164,7 +164,7 @@ Try to access the file via Client 1. You shoulde be able to read the file but no
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/ux7pZlT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 8b. In the text box add "accountants", select their permission as read/write  then click share.  
 </p>
 <br />
@@ -172,7 +172,7 @@ Try to access the file via Client 1. You shoulde be able to read the file but no
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/s2zMIXs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 9. Search //dc-1 in file explorer on client-1 as a domain user to see files shared. Click on the accounting folder and you shouldn't be able to open it!
 </p>
 <br />
@@ -183,7 +183,7 @@ Try to access the file via Client 1. You shoulde be able to read the file but no
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/IG9XsOk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 10a. Next you will add that domain user to the accountant group so they can access file.
 On the DC make this user member of the accountants security group.
 On DC, head to active directory users and computers> my domain.com> security groups> Accountants
@@ -193,7 +193,7 @@ On DC, head to active directory users and computers> my domain.com> security gro
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/hpYceqs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 10b. Right click the accountant folder> Members" tab> add button
 In object name type the user's username and click apply>ok.
 </p>
@@ -202,7 +202,7 @@ In object name type the user's username and click apply>ok.
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/wYofGVv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 11. Log out User in CLient-1 to reset computer and add new permissions. Log  in again as that user. you can hold windows key and R simultaneously to go directly to file explorer. type \\DC-1 and
 go directly to shared files on domain! You can now access the accountant folder
 </p>
