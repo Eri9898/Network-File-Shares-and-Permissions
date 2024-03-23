@@ -95,7 +95,7 @@ Skip the accouting folder for now.
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/a4l1on5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 5. Next you will attempt to access file shares as a normal user. On client 1 (logged on as a domain user) navigate to shared folder. Go to file explorer and paste \\dc-1 in the search bar. Then you'll see all the folders shared on the domain.
 </p>
 <br />
@@ -103,7 +103,7 @@ Skip the accouting folder for now.
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/uGmwBKR" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 6a. Try to access the folders you made, which can you access and which folders can you create stuff in?
 The no access shouldn't be able to be opened and read you can read but not edit and read/write you could do both.
 </p>
@@ -112,7 +112,7 @@ The no access shouldn't be able to be opened and read you can read but not edit 
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/eCZKtRo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 6b. *On DC-1 as an admin, create a file within "read access" folder so that on client 1 you can try to edit the text file and observe. So on file explorer go to ThisPC>C: Drive> "Read Access" Folder> within the white spacee> new> Text File. Write anything in there for the lab and save the file.
 
 Try to access the file via Client 1. You shoulde be able to read the file but not add any files or edit any documents. 
@@ -125,13 +125,13 @@ Try to access the file via Client 1. You shoulde be able to read the file but no
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
+<img src="https://imgur.com/XxyV5zf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
 <br />
 </p>
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/ZWdTtbm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 7a. Go to DC in AD and create an OU named "security groups" "Accountants". Go to active directory users and computers> right click my domain>new> organzational unit, click on that and name it "Security Group". Right click my domain again and refresh! 
 </p>
 <br />
@@ -139,13 +139,13 @@ Try to access the file via Client 1. You shoulde be able to read the file but no
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
+<img src="https://imgur.com/7HuF53x.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
 <br />
 </p>
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/NJciIgd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 7b. Go to security groups to the right, right click go to new>group click that and name new group ACCOUNTANTS and griup type will be security! and click ok!)
 
 
@@ -156,7 +156,7 @@ Try to access the file via Client 1. You shoulde be able to read the file but no
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/5DOFZPQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 8. On the accounting folder set the following permissions, 'read and write'. Right click on the accouting folder> properties> sharing tab> click share. 
 </p>
 <br />
