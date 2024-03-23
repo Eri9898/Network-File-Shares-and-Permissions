@@ -25,7 +25,7 @@ This tutorial outlines how to create file shares, security groups and configurin
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/RS4g3vK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 1. Go to portal azure and use RDP to connect to DC! Log into DC w your admin account (MyDomain.com/jane_admin)
 </p>
 <br />
@@ -33,7 +33,7 @@ This tutorial outlines how to create file shares, security groups and configurin
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/cm3QHkg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 2. Log into CLient 1 as a normal user.
 Pick a user from the domain from  server manager>adminastrstive tools> Active DIrectory Users and Coimputers file>my domain.com> employees 
 and the list to the right should populate. Choose a random one and RDP to client 1 with mydomain.com/username
@@ -43,7 +43,7 @@ and the list to the right should populate. Choose a random one and RDP to client
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/4leHHpe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 3.On DC on the C:\ drive, create 4 folders: "Read access", "Write Access" "No access" and "Accounting". They are just names for the 
 files, they have no permissions applied to them yet. Go to file explorer and click on this PC then click on the C drive. Right click
 under other folders new>folder and create those 4 folders. 
@@ -58,14 +58,15 @@ under other folders new>folder and create those 4 folders.
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
+<img src="https://imgur.com/3ttGgGA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
+4b. The "Read Access" folder will only have reading access available for Domain Users.To do that go to DC. Right click on "read access" folder>go to properties>sharing and click share button.
 <br />
 </p>
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-4b. The "Read Access" folder will only have reading access available for Domain Users.To do that go to DC. Right click on "read access" folder>go to properties>sharing and click share button. It'll open a seperate page that'll prompt you to write a name (write whom the folder will be shrared with) which will be "domain users". Click add and it'll pop up on the list below and to the right it has permission level which will be "read" and then click share at the bottom.
+<img src="https://imgur.com/2W16743.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+It'll open a seperate page that'll prompt you to write a name (write whom the folder will be shrared with) which will be "domain users". Click add and it'll pop up on the list below and to the right it has permission level which will be "read" and then click share at the bottom.
 
 </p>
 <br />
@@ -73,7 +74,7 @@ under other folders new>folder and create those 4 folders.
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/ZbFPaIO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 4c. Folder "Write access" will give "Domain Users" Permsissions to "Read/Write". Right click folder>properities>share> add domain users to the list and on permission level select read/write. 
 </p>
 <br />
@@ -81,7 +82,7 @@ under other folders new>folder and create those 4 folders.
 <br />
 </p>
 <br />
-<img src="https://imgur.com/69lGgqX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/mvSAuJo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 4d. Folder "No access" will give the  Group "Domain ADMINS" Permissions to "Read/Write". Open folder properties, go to share and type in domain admins when prompted. Add to the list and change permissions to read/write and share.Normal users have no access to this!
 
 Skip the accouting folder for now.
