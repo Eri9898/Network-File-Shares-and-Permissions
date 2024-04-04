@@ -10,12 +10,12 @@ This tutorial outlines how to create file shares, security groups and configurin
 
 - Microsoft Azure (Virtual Machines/Computer)
 - Windows Machine
-- DOmain Controller
+- Domain Controller
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10</b> (21H2)
--windows server 2022
+- Windows server 2022
 
 <h2>Create File Shares With Various Permissions</h2>
 
