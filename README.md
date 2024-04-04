@@ -34,8 +34,8 @@ This tutorial outlines how to create file shares, security groups and configurin
 </p>
 <br />
 <img src="https://imgur.com/cm3QHkg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-2. Log into CLient 1 as a normal user.
-Pick a user from the domain from  server manager>adminastrstive tools> Active DIrectory Users and Coimputers file>my domain.com> employees 
+2. Log into Client 1 as a normal user.
+To do that pick a user from the domain from server manager>adminastrstive tools> Active DIrectory Users and Computers file>my domain.com> employees 
 and the list to the right should populate. Choose a random one and RDP to client 1 with mydomain.com/username
 </p>
 <br />
@@ -83,7 +83,7 @@ It'll open a seperate page that'll prompt you to write a name (write whom the fo
 </p>
 <br />
 <img src="https://imgur.com/mvSAuJo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-4d. Folder "No access" will give the  Group "Domain ADMINS" Permissions to "Read/Write". Open folder properties, go to share and type in domain admins when prompted. Add to the list and change permissions to read/write and share.Normal users have no access to this!
+4d. Folder "No access" will give the  Group "Domain ADMINS" Permissions to "Read/Write". Open folder properties, go to share and type in domain admins when prompted. Add to the list and change permissions to read/write and share. Normal users have no access to this!
 
 Skip the accouting folder for now.
 
@@ -132,7 +132,7 @@ Try to access the file via Client 1. You shoulde be able to read the file but no
 </p>
 <br />
 <img src="https://imgur.com/ZWdTtbm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-7a. Go to DC in AD and create an OU named "security groups" "Accountants". Go to active directory users and computers> right click my domain>new> organzational unit, click on that and name it "Security Group". Right click my domain again and refresh! 
+7a. Go to DC in AD and create an OU named "security groups". Go to active directory users and computers> right click my domain>new> organzational unit, click on that and name it "Security Group". Right click my domain again and refresh! 
 </p>
 <br />
 </p>
@@ -146,7 +146,7 @@ Try to access the file via Client 1. You shoulde be able to read the file but no
 </p>
 <br />
 <img src="https://imgur.com/NJciIgd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-7b. Go to security groups to the right, right click go to new>group click that and name new group ACCOUNTANTS and griup type will be security! and click ok!)
+7b. Go to security groups to the right, right click go to new>group click that and name new group ACCOUNTANTS and group type will be security! and click ok!
 
 
 <h2>Accessing Files as a Domain User cnt'd </h2>
@@ -194,7 +194,7 @@ On DC, head to active directory users and computers> my domain.com> security gro
 </p>
 <br />
 <img src="https://imgur.com/hpYceqs.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-10b. Right click the accountant folder> Members" tab> add button
+10b. Right click the accountant folder> "Members" tab> add button
 In object name type the user's username and click apply>ok.
 </p>
 <br />
@@ -207,6 +207,7 @@ In object name type the user's username and click apply>ok.
 go directly to shared files on domain! You can now access the accountant folder
 </p>
 <br />
+12. Network shares and security groups can add another level of customization when it comes to users' access on a network. You now have some permissions set on your files!
 
 
 
