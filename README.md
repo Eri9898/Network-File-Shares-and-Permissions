@@ -88,7 +88,7 @@ It'll open a seperate page that'll prompt you to write a name (write whom the fo
 Skip the accouting folder for now.
 
 
-<h2>Accessing Files as a Domain User</h2>
+<h2> Accessing Files as a Domain User </h2>
 </p>
 <br />
 </p>
