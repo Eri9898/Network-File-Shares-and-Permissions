@@ -3,7 +3,7 @@
 <img src="https://imgur.com/oNr4Sqk.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket -Ticket Life Cycle</h1>
+<h1></h1>
 This tutorial outlines how to create file shares, security groups and configuring permissions for files and users.<br />
 
 <h2>Environments and Technologies Used</h2>
