@@ -83,7 +83,7 @@ It'll open a seperate page that'll prompt you to write a name (write whom the fo
 </p>
 <br />
 <img src="https://imgur.com/mvSAuJo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-4d. Folder "No access" will give the  Group "Domain ADMINS" Permissions to "Read/Write". Open folder properties, go to share and type in domain admins when prompted. Add to the list and change permissions to read/write and share. Normal users have no access to this!
+4d. Folder "No access" will give the  Group "Domain ADMINS" Permissions to "Read/Write". Open folder properties, go to share and type in domain admins when prompted. Add to the list and change permissions to read/write and share. Normal users have no access to this! This tuturial uses Share permissions for simplicity. In enterprise environments, NTFS permissions are also configured under the 'Security' tab to fine-tune access control.
 
 Skip the accouting folder for now.
 
@@ -147,7 +147,7 @@ Try to access the file via Client 1. You shoulde be able to read the file but no
 <br />
 <img src="https://imgur.com/NJciIgd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 7b. Go to security groups to the right, right click go to new>group click that and name new group ACCOUNTANTS and group type will be security! and click ok!
-
+"By using security groups, access can be controlled at scale — you manage group membership, not individual folder perms. It's best practice in any org above 5 users."
 
 <h2>Accessing Files as a Domain User cnt'd </h2>
 </p>
