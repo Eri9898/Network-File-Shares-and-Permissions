@@ -26,7 +26,7 @@ This tutorial outlines how to create file shares, security groups and configurin
 </p>
 <br />
 <img src="https://imgur.com/RS4g3vK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-1. Go to portal azure and use RDP to connect to DC! Log into DC with your admin account (MyDomain.com/jane_admin)
+1. Go to portal azure and use RDP to connect to the Domain Controller ( DC)! Log into DC with your admin account (MyDomain.com/jane_admin)
 </p>
 <br />
 </p>
