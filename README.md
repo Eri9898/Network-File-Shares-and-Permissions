@@ -28,13 +28,9 @@ This tutorial creates a multi-user network file access system using Active Direc
 - Troubleshooting Permissions
 
 
-
+</p>
+<br />
 <h2>Create File Shares With Various Permissions</h2>
-
-</p>
-<br />
-</p>
-<br />
 </p>
 <br />
 <img src="https://imgur.com/RS4g3vK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -56,22 +52,24 @@ and the list to the right should populate. Choose a random one and RDP to client
 </p>
 <br />
 <img src="https://imgur.com/4leHHpe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-3.On DC on the C:\ drive, create 4 folders with text documents in them: "Read access", "Write Access" "No access" and "Accounting". They are just names for the 
+3a.On DC on the C:\ drive, create 4 folders with text documents in them: "Read access", "Write Access" "No access" and "Accounting". They are just names for the 
 files, they have no permissions applied to them yet. Go to file explorer and click on this PC then click on the C drive. Right click
 under other folders new>folder and create those 4 folders. 
 </p>
 <br /> 
 
-4a. Next we will set the following permissions for the "Domain Users" Group:
-
+3b. To create the file documents just open the folders. ThisPC>C: Drive> "Read Access" Folder> within the white spacee> new> Text File. Write anything in there for the lab and save the file. Repeat the process for the other 2 folders.
 </p>
 <br />
+</p>
+<br />
+4a. Next we will set the following permissions for the "Domain Users" Group:
 </p>
 <br />
 </p>
 <br />
 <img src="https://imgur.com/3ttGgGA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
-4b. The "Read Access" folder will only have reading access available for Domain Users. To do that go to DC. Right click on "read access" folder>go to properties>sharing and click share button.
+4b. The "Read Access" folder will only have reading access available for Domain Users. To do that go to DC's C drive. Right click on "read access" folder>go to properties>sharing and click share button.
 <br />
 </p>
 <br />
@@ -97,7 +95,7 @@ It'll open a seperate page that'll prompt you to write a name (write whom the fo
 <img src="https://imgur.com/mvSAuJo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 4d. Folder "No access" will give the  Group "Domain ADMINS" Permissions to "Read/Write". Open folder properties, go to share and type in domain admins when prompted. Add to the list and change permissions to read/write and share. Normal users have no access to this! 
 
-This tuturial uses Share permissions for simplicity. In enterprise environments, NTFS permissions are also configured under the 'Security' tab to fine-tune access control.
+In enterprise environments, NTFS permissions are also configured under the 'Security' tab to fine-tune access control. We will touch upon that after the next section!
 
 Skip the accouting folder for now.
 
@@ -119,22 +117,12 @@ Skip the accouting folder for now.
 <br />
 <img src="https://imgur.com/uGmwBKR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
- 6b. *On DC-1 as an admin, create a file within "read access" folder so that on client 1 you can try to edit the text file and observe. So on file explorer go to ThisPC>C: Drive> "Read Access" Folder> within the white spacee> new> Text File. Write anything in there for the lab and save the file.
- 
 6a. Try to access the folders you made, which can you access and which folders can you create stuff in?
 The no access shouldn't be able to be opened and read you can read but not edit and read/write you could do both.
 </p>
 <br />
 </p>
 <br />
-</p>
-<br />
-<img src="https://imgur.com/eCZKtRo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-6b. *On DC-1 as an admin, create a file within "read access" folder so that on client 1 you can try to edit the text file and observe. So on file explorer go to ThisPC>C: Drive> "Read Access" Folder> within the white spacee> new> Text File. Write anything in there for the lab and save the file.
-
-Try to access the file via Client 1. You shoulde be able to read the file but not add any files or edit any documents. 
-
-
 <h2>Creating Security Groups</h2>
 </p>
 <br />
@@ -142,13 +130,10 @@ Try to access the file via Client 1. You shoulde be able to read the file but no
 <br />
 </p>
 <br />
-<img src="https://imgur.com/XxyV5zf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
-<br />
-</p>
-<br />
-</p>
-<br />
 <img src="https://imgur.com/ZWdTtbm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+</p>
+<img src="https://imgur.com/XxyV5zf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
 7a. Go to DC in AD and create an OU named "security groups". Go to active directory users and computers> right click my domain>new> organzational unit, click on that and name it "Security Group". Right click my domain again and refresh! 
 </p>
 <br />
@@ -163,10 +148,9 @@ Try to access the file via Client 1. You shoulde be able to read the file but no
 </p>
 <br />
 <img src="https://imgur.com/NJciIgd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-7b. Go to security groups to the right, right click go to new>group click that and name new group ACCOUNTANTS and group type will be security! and click ok!
-"By using security groups, access can be controlled at scale — you manage group membership, not individual folder perms. It's best practice in any org above 5 users."
+7b. On the security folder right click go to new>group click that and name new group ACCOUNTANTS and group type will be security! and click ok! By using security groups, access can be controlled at scale. It's best practice in any org above 5 users.
 
-<h2>Accessing Files as a Domain User cnt'd </h2>
+<h2>Accessing Files as a Domain User </h2>
 </p>
 <br />
 </p>
@@ -174,7 +158,7 @@ Try to access the file via Client 1. You shoulde be able to read the file but no
 </p>
 <br />
 <img src="https://imgur.com/5DOFZPQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-8. On the accounting folder set the following permissions, 'read and write'. Right click on the accouting folder> properties> sharing tab> click share. 
+8. On the DC's C Drive in the accounting folder, set the following permissions, 'read and write'. Right click on the accouting folder> properties> sharing tab> click share. 
 </p>
 <br />
 </p>
@@ -224,7 +208,7 @@ In object name type the user's username and click apply>ok.
 go directly to shared files on domain! You can now access the accountant folder
 </p>
 <br />
-12. Network shares and security groups can add another level of customization when it comes to users' access on a network. You now have some permissions set on your files!
+Network shares and security groups can add another level of customization when it comes to users' access on a network. You now have some permissions set on your files!
 
 
 
