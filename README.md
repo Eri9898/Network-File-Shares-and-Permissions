@@ -1,10 +1,15 @@
-# Network File Shares and Permissions
+# Windows File Sharing & Access Control Using Active Directory (Azure)
 <p align="center">
 <img src="https://imgur.com/oNr4Sqk.png" alt="osTicket logo"/>
 </p>
 
 <h1></h1>
-This tutorial outlines how to create file shares, security groups and configuring permissions for files and users.<br />
+This tutorial creates a multi-user network file access system using Active Directory and security groups to manage user permissions across a Windows Server domain environment in Azure. It demonstrates how to:
+
+- Configure and share folders on a domain controller
+- Create and manage security groups in Active Directory
+- Set ffile level access (read, write, deny) for users and groups
+- Test access usin standard domain users from a domain-joined client
 
 <h2>Environments and Technologies Used</h2>
 
@@ -12,10 +17,16 @@ This tutorial outlines how to create file shares, security groups and configurin
 - Windows Machine
 - Domain Controller
 
-<h2>Operating Systems Used </h2>
+<h2> Skills Used </h2>
 
-- Windows 10</b> (21H2)
-- Windows server 2022
+- Azure
+- Windows Server
+- ADUC 
+- File Sharing
+- Group Management
+- Troubleshooting Permissions
+
+
 
 <h2>Create File Shares With Various Permissions</h2>
 
