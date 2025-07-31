@@ -203,7 +203,6 @@ In object name type the user's username and click apply>ok.
 <br />
 </p>
 <br />
-<img src="https://imgur.com/wYofGVv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 11. Log out User in CLient-1 to reset computer and add new permissions. Log  in again as that user. you can hold windows key and R simultaneously to go directly to file explorer. type \\DC-1 and
 go directly to shared files on domain! You can now access the accountant folder
 </p>
