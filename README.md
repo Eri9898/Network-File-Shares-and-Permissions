@@ -5,11 +5,12 @@
 
 <h1></h1>
 This tutorial creates a multi-user network file access system using Active Directory and security groups to manage user permissions across a Windows Server domain environment in Azure. It demonstrates how to:
+</p>
 
 - Configure and share folders on a domain controller
 - Create and manage security groups in Active Directory
-- Set ffile level access (read, write, deny) for users and groups
-- Test access usin standard domain users from a domain-joined client
+- Set file level access (read, write, deny) for users and groups
+- Test access using standard domain users from a domain-joined client
 
 <h2>Environments and Technologies Used</h2>
 
@@ -70,7 +71,7 @@ under other folders new>folder and create those 4 folders.
 </p>
 <br />
 <img src="https://imgur.com/3ttGgGA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
-4b. The "Read Access" folder will only have reading access available for Domain Users.To do that go to DC. Right click on "read access" folder>go to properties>sharing and click share button.
+4b. The "Read Access" folder will only have reading access available for Domain Users. To do that go to DC. Right click on "read access" folder>go to properties>sharing and click share button.
 <br />
 </p>
 <br />
