@@ -95,7 +95,9 @@ It'll open a seperate page that'll prompt you to write a name (write whom the fo
 </p>
 <br />
 <img src="https://imgur.com/mvSAuJo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-4d. Folder "No access" will give the  Group "Domain ADMINS" Permissions to "Read/Write". Open folder properties, go to share and type in domain admins when prompted. Add to the list and change permissions to read/write and share. Normal users have no access to this! This tuturial uses Share permissions for simplicity. In enterprise environments, NTFS permissions are also configured under the 'Security' tab to fine-tune access control.
+4d. Folder "No access" will give the  Group "Domain ADMINS" Permissions to "Read/Write". Open folder properties, go to share and type in domain admins when prompted. Add to the list and change permissions to read/write and share. Normal users have no access to this! 
+
+This tuturial uses Share permissions for simplicity. In enterprise environments, NTFS permissions are also configured under the 'Security' tab to fine-tune access control.
 
 Skip the accouting folder for now.
 
@@ -116,6 +118,9 @@ Skip the accouting folder for now.
 </p>
 <br />
 <img src="https://imgur.com/uGmwBKR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+ 6b. *On DC-1 as an admin, create a file within "read access" folder so that on client 1 you can try to edit the text file and observe. So on file explorer go to ThisPC>C: Drive> "Read Access" Folder> within the white spacee> new> Text File. Write anything in there for the lab and save the file.
+ 
 6a. Try to access the folders you made, which can you access and which folders can you create stuff in?
 The no access shouldn't be able to be opened and read you can read but not edit and read/write you could do both.
 </p>
