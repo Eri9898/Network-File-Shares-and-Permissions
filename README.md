@@ -56,7 +56,7 @@ and the list to the right should populate. Choose a random one and RDP to client
 </p>
 <br />
 <img src="https://imgur.com/4leHHpe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-3.On DC on the C:\ drive, create 4 folders: "Read access", "Write Access" "No access" and "Accounting". They are just names for the 
+3.On DC on the C:\ drive, create 4 folders with text documents in them: "Read access", "Write Access" "No access" and "Accounting". They are just names for the 
 files, they have no permissions applied to them yet. Go to file explorer and click on this PC then click on the C drive. Right click
 under other folders new>folder and create those 4 folders. 
 </p>
