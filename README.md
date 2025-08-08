@@ -43,7 +43,7 @@ This tutorial creates a multi-user network file access system using Active Direc
 <br />
 <img src="https://imgur.com/cm3QHkg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 2. Log into Client 1 as a normal user.
-To do that pick a user from the domain from server manager>adminastrstive tools> Active DIrectory Users and Computers file>my domain.com> employees 
+To do that pick a user from the domain from Server Manager>Adminastrstive Tools> Active Directory Users and Computers file>MyDomain.com> Employees 
 and the list to the right should populate. Choose a random one and RDP to client 1 with mydomain.com/username
 </p>
 <br />
@@ -52,13 +52,13 @@ and the list to the right should populate. Choose a random one and RDP to client
 </p>
 <br />
 <img src="https://imgur.com/4leHHpe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-3a.On DC on the C:\ drive, create 4 folders with text documents in them: "Read access", "Write Access" "No access" and "Accounting". They are just names for the 
+3a.On DC on the C:\ drive, create 4 folders with text documents in them: "Read access", "Write Access" "No Access" and "Accounting". They are just names for the 
 files, they have no permissions applied to them yet. Go to file explorer and click on this PC then click on the C drive. Right click
-under other folders new>folder and create those 4 folders. 
+under other folders New>Folder and create those 4 folders. 
 </p>
 <br /> 
 
-3b. To create the file documents just open the folders. ThisPC>C: Drive> "Read Access" Folder> within the white spacee> new> Text File. Write anything in there for the lab and save the file. Repeat the process for the other 2 folders.
+3b. To create the file documents just open the folders. ThisPC>C: Drive> "Read Access" Folder> within the white space> new> Text File. Write anything in there and save the file. Repeat the process for the other 2 folders.
 </p>
 <br />
 </p>
@@ -134,7 +134,7 @@ The no access shouldn't be able to be opened and read you can read but not edit 
 <br />
 </p>
 <img src="https://imgur.com/XxyV5zf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/></p>
-7a. Go to DC in AD and create an OU named "security groups". Go to active directory users and computers> right click my domain>new> organzational unit, click on that and name it "Security Group". Right click my domain again and refresh! 
+7a. Go to DC in AD and create an OU named "security groups". Go to Active Directory Users and Computers> right click my domain>new> organzational unit, click on that and name it "Security Group". Right click my domain again and refresh! 
 </p>
 <br />
 </p>
@@ -185,7 +185,7 @@ The no access shouldn't be able to be opened and read you can read but not edit 
 </p>
 <br />
 <img src="https://imgur.com/IG9XsOk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-10a. Next you will add that domain user to the accountant group so they can access file.
+10a. Next you will add that domain user to the accountant group so they can access the file.
 On the DC make this user member of the accountants security group.
 On DC, head to active directory users and computers> my domain.com> security groups> Accountants
 </p>
@@ -203,7 +203,7 @@ In object name type the user's username and click apply>ok.
 <br />
 </p>
 <br />
-11. Log out User in CLient-1 to reset computer and add new permissions. Log  in again as that user. you can hold windows key and R simultaneously to go directly to file explorer. type \\DC-1 and
+11. Log out User in Client-1 to reset computer and add new permissions. Log in again as that user. You can hold windows key and R simultaneously to go directly to file explorer. type \\DC-1 and
 go directly to shared files on domain! You can now access the accountant folder
 </p>
 <br />
